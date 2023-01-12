@@ -9,10 +9,10 @@
 
 <form method="post">
   {% csrf_token%}
-  <input type="text" placeholder="Введите название" class="form-controll"><br>
-  <textarea type=" text" placeholder="Введите описание" class="form-controll"></textarea><br>
+  {{ form.title }}<br>
+  {{form.task}} <br>
   <button type="submit" class="btn bnt-success" >Добавить </button>
-
+  <span>{{ error }}</span>
 
 
 
